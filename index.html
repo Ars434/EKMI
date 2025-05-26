@@ -17,7 +17,7 @@
         <div class="container">
             <div class="nav-all">
                 <div class="nav-catalog">
-                    <a href="#" class="catalog-link">Каталог</a>
+                    <a href="#" class="catalog-link" data-translate="catalog">Каталог</a>
                     <div class="catalog-dropdown">
                         <a href="#">Диваны</a>
                         <a href="#">Кресла</a>
@@ -29,8 +29,8 @@
                         <a href="str-model.html">2D-3D модели</a>
                     </div>
                 </div>
-                <a href="individ.html">Индивидуальная мебель</a>
-                <a href="contacts.html">Контакты</a>
+                <a href="individ.html" data-translate="individual">Индивидуальная мебель</a>
+                <a href="contacts.html" data-translate="contacts">Контакты</a>
                 <a href="index.html">
                     <img src="img/logo.svg">
                 </a>
@@ -257,6 +257,8 @@
                                     type="tel"
                                     class="form-input"
                                     placeholder="Ваш номер телефона*"
+                                    pattern="\d+"
+                                    title="Разрешены только цифры"
                                     required
                                 >
                             </div>
@@ -416,11 +418,25 @@
                 <form>
                     <!-- Ваша существующая форма -->
                     <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Ваше имя*" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" class="form-input" placeholder="Ваш номер телефона*" required>
-                    </div>
+                    <input
+                        type="text"
+                        class="form-input"
+                        placeholder="Ваше имя*"
+                        pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ\s'-]+"
+                        title="Разрешены только буквы, пробелы и дефисы"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <input
+                        type="tel"
+                        class="form-input"
+                        placeholder="Ваш номер телефона*"
+                        pattern="\d+"
+                        title="Разрешены только цифры"
+                        required
+                    >
+                </div>
                     <div class="form-group">
                         <input type="text" class="form-input" placeholder="Страна">
                     </div>
@@ -858,6 +874,8 @@
                                     type="text"
                                     class="form-input"
                                     placeholder="Ваше имя*"
+                                    pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ\s'-]+"
+                                    title="Разрешены только буквы, пробелы и дефисы"
                                     required
                                 >
                             </div>
@@ -867,6 +885,8 @@
                                     type="tel"
                                     class="form-input"
                                     placeholder="Ваш номер телефона*"
+                                    pattern="\d+"
+                                    title="Разрешены только цифры"
                                     required
                                 >
                             </div>
@@ -909,6 +929,7 @@
     <script src="js/main.js"></script>
     <script src="js/fff.js"></script>
     <script src="js/mob.js"></script>
+    <script src="js/lang.js"></script>
 
 
 </body>
