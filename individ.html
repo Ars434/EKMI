@@ -118,6 +118,8 @@
                                     type="text"
                                     class="form-input"
                                     placeholder="Ваше имя*"
+                                    pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ\s'-]+"
+                                    title="Разрешены только буквы, пробелы и дефисы"
                                     required
                                 >
                             </div>
@@ -127,6 +129,8 @@
                                     type="tel"
                                     class="form-input"
                                     placeholder="Ваш номер телефона*"
+                                    pattern="\d+"
+                                    title="Разрешены только цифры"
                                     required
                                 >
                             </div>
