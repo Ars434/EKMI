@@ -32,6 +32,13 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     box-sizing: border-box;
 }
+.footer-top-nav1 a {
+    text-decoration: none;
+}
+
+.footer-top-nav2 a {
+    text-decoration: none;
+}
 
 nav {
 
