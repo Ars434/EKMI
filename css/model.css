@@ -19,6 +19,13 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1170px;
     margin: 0 auto;
 }
+.footer-top-nav1 a {
+    text-decoration: none;
+}
+
+.footer-top-nav2 a {
+    text-decoration: none;
+}
 
 nav {
 
