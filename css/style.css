@@ -1148,6 +1148,14 @@ footer {
     width: 90%;
 }
 
+.footer-top-nav1 a {
+    text-decoration: none;
+}
+
+.footer-top-nav2 a {
+    text-decoration: none;
+}
+
 .mobile {
     display: none;
 }
@@ -1255,7 +1263,7 @@ footer {
         font-size: 25px;
     }
     .header-all-right-tochki {
-        position: absolute;
+        position: relative;
         display: flex;
         align-items: center;
         grid-gap: 10px;
@@ -1286,9 +1294,8 @@ footer {
     }
     .header-all-right-tochki {
         position: absolute;
-        bottom: 20px;
         left: 50%;
-        transform: translateX(-50%) translateY(-290px);
+        transform: translateX(-50%) translateY(-0px);
         z-index: 3;
         display: flex;
     }
@@ -1957,3 +1964,4 @@ footer {
         display: flex;
     }
 }
+
